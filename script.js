@@ -1,290 +1,516 @@
-// https://github.com/ArtemRysich/Group_77
+// if(){
+
+// }else{
+
+// }
+
+// if(4>5){ //4>5 => false
+//     console.log('true');
+// }else{
+//     console.log('false');
+// }
+// const value = 7
+
+// if (value > 5) { // 7> 5 => true
+//     console.log('4>5');
+// } else if (value > 6) {
+//     console.log('4>6');
+// } else if (value > 3) {
+//     console.log('4>3');
+// } else {
+//     console.log('else');
+// }
+
+// const value = '';
+// if (value) { //0 => false
+//     console.log('if');
+// } else {
+//     console.log('else');
+// }
 
 
-// https://developer.mozilla.org/en-US/
-// https://uk.javascript.info/
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
+// condition ? exmple 1 : example 2
 
 
-// console.log('Hello world');
-// let value;
-// console.log(value);
-// value = 1;
-// console.log(value);
+// const result = 7 > 6 ? 'більше' : 'меньше';
 
-// console.log(3 === "3"); // Number vs String
-// console.log(3 == "3");  // Number vs Number
+// let result;
 
-//  
-// 1 undefined => false
-// 2 null      => false
-// 3 0         => false
-// 4 NaN       => false
-// 5 clg       => false
-// 6 false     => false
+// if (7 > 6) {
+//     result = 'більше';
+// } else {
+//     result = 'меньше';
+// }
 
-// console.log(Boolean("false")); => 
-// console.log(!!"false");
+// console.log(result);
+
+
+
+// const result = 10 + 5;
+// console.log(result);
+// console.log(testValue);
+// const value = 5;
+// if (value === 1) {
+//     console.log('one');
+// } else if (value === 2) {
+//     console.log('two');
+// } else if (value === 5) {
+//     console.log('Good result');
+// } else {
+//     console.log("default")
+// }
+
+// switch (value) {
+//     case 1:
+//         console.log('one');
+//         break
+//     case 2:
+//         console.log('two');
+//         break
+//     case 5:
+//         console.log('Good result');
+//         break
+//     default:
+//         console.log("default")
+// }
+
+// const a = 'name';
+// switch (a) {
+//     case 'age':
+//         console.log('one');
+//         break;
+//     case 'name':
+//         console.log('two');
+//         break;
+//     case 'city':
+//         console.log('Good result');
+//         break;
+//     default:
+//         console.log("default")
+// }
+
+
+// const let
 
 // var
 
+// 1 Глобальна
+// 2 Блочна
+// 3 Функціональна
 
-// const a = 10;
-// // a = 15
-// let b; // undefined
-// b = 15;
-// b = '15';
+
+// 
+// Блочна
+// {
+
+// }
+
+
+// Функціональна
+// function(){
+
+// }
+
+
+
+// const a = 15;
+
+// if (true) {
+//     console.log(a);
+// }
+
+// if(true){
+//     var b = 22;
+// }
 // console.log(b);
+
+// function foo() {
+//     console.log(a);
+//     var b = 22;
+// }
+// console.log(b);
+
+
+// в глобальні
+// let a = 15;
+
+// if (true) {
+//     // Блочна
+//     let a = 1;
+//     a = 25;
+// }
+
 // console.log(a);
-// var a = 10;
+
+// глобальна
+// let a = 15;
+
+// if (true) {
+//     // звернення до ініціалізації
+//     a = 25;
+//     let a = 1;
+// }
+
+// console.log(a);
+
+// глобальна
+// let a = 10;
+
+
+// if (true) {
+//     // блочна
+//     a = 15;
+//     if (true) {
+//         a = 25
+//     }
+// }
+// console.log(a);
+
+// if(true){
+//     // блочна
+//     let a = 15;
+//     if(true){
+//         a = 25
+//     }
+// }
+// console.log(a);
+
+// if(true){
+//     // блочна
+//     let a = 15;
+//     if(true){
+//         a = 25
+//     }
+//     console.log(a);
+// }
+
+
+// let a = 15;
+
+
+// if (true) {
+//     // блочна
+//     a = 15;
+//     if (true) {
+//         let a = 25
+//     }
+// }
+// console.log(a);
+
+// let b = 25;
+
+// if (true) {
+//     // блочна
+//     let a = 15;
+//     b = 44;
+//     if (true) {
+//         a = 25
+//         b = 31
+//     }
+//     a = 44
+//     console.log(b);
+// }
 // console.log(a);
 
 
 
-// Примітивні типи даних - імутабельні типи даних
-// 1 Number
-// 2 String
-// 3 Boolean
-// 4 Undefined
-// 5 Null
 
 
-// const a = 10;
+// for (let i = 0; i < 5; i+=1){
+//     console.log(i);
+// }
+//  12345
+// const str = 'hello world';
+//          //  01234
+// for(let i = 0; i < str.length; i+=1){
+//     console.log(str[i]); //0,1,2,3,4,5,6
+// }
 
-// a = a + 2;
-// a = 12;
-// a += 2
 
 
+// while(true){
+//     console.log('hello world');
+// }
 
 
+// const str = 'hello world';
 
-// Example 1 - Математичні оператори
-// Виведи на екран загальну кількість яблук та винограду. Різницю яблук та винограду.
 
-// const apples = 47;
-// const grapes = 135;
-// const total = apples + grapes;
-// console.log(total)
-// const diff = grapes - apples;
-// console.log(diff)
+// let i = 0;
+// while (i < str.length) {
+//     if(str[i] === 'w'){
+//         console.log('yes');
+//         break;
+//     }
+//     console.log('no', str[i]);
+//     i += 1;
+// }
 
+// const str = 'hello world';
+// let i = 15;
+// do {
+//     if (str[i] === 'w') {
+//         console.log('yes');
+//         break;
+//     }
+//     console.log('no');
+//     i += 1;
+// } while (i < str.length)
 
 
-// Example 2 - Комбіновані оператори
-// Заміни вираз перевизначення комбінованим оператором +=.
 
-// let students = 100;
-// students = students + 50;
-// students += 50;
-// console.log(students);
 
 
-// Example 3 - Пріоритет операторів
-// Розбери пріоритет операторів в інструкції привласнення значення змінної result.
+// Example 1 - Введення користувача та розгалуження
 
-// const result = 108 + 223 - 2 * 5;
-// console.log(result);
+// Використовуючи конструкцію if..else та prompt, напиши код, який питатиме: "Яка офіційна назва JavaScript?". Якщо користувач вводить ECMAScript, то показуй alert з рядком "Правильно!", в іншому випадку - "Не знаєте? ECMAScript!"
 
+// const value = prompt("Яка офіційна назва JavaScript?");
+// if (value === 'ECMAScript') {
+//     alert("Правильно!")
+// } else {
+//     alert("Не знаєте? ECMAScript!")
+// }
 
-// Example 4 - Клас Math
-// Напиши скрипт, який виводить у консоль заокруглені вгору/вниз і т.д. значення змінної value. Використовуй методи Math.floor(), Math.ceil() та Math.round(). Перевір що буде в консолі при значеннях 27.3 та 27.9.
 
-// const value = 27.5;
+// Example 2 - Відображення часу (if...else)
+// Напиши скрипт для відображення годин та хвилин у консолі браузера у вигляді рядка формату "14 г. 26 хв.". Якщо значення змінної minutes дорівнює 0, то виводь рядок "14 г.", без хвилин.
 
-// console.log(Math.ceil(value)); // Округлить завжди в сторону більшого значення
-// console.log(Math.floor(value)); // Округлить завжди в сторону меньшого значення
-// console.log(Math.round(value)); // Округлить завжди по математичному принципу
+// const hours = 14;
+// const minutes = 1;
+// let timestring;
 
-// Example 5 - Шаблонні рядки
-// Склади речення за допомогою шаблонних рядків A has B bots in stock, де A, B - змінні вставлені в рядок.
+// if (minutes) {
+//     console.log(`${hours} г. ${minutes}хв.`);
+// } else {
+//     console.log(`${hours} г.`);
+// }
 
-// const name = "Artem"
-// const age = 28;
 
-// const result = name + ' years ' + age;
-// console.log(result);
 
-//  String являється домінуючим типом даних
-// const c = 10 + 22 + "11" + 44;
-// console.log(typeof c);
+// Example 3 - Розгалуження
+// Напиши скрипт, який виводить у консоль рядок "Це позитивне число", якщо у prompt користувач ввів число більше нуля. Якщо було введено нуль, виводь в консоль рядок "Це нуль". Якщо передали від'ємне число, у консолі повинен бути рядок "Це негативне число".
 
-// const a = 2 * "3";
-// console.log(typeof a);
+// const userInput = Number(prompt('Введіть число'));
+// console.log( typeof userInput);
+// if (!userInput) { // 0 =>! + false => true
+//     console.log("Це нуль");
+// } else if (userInput > 0) {
+//     console.log("Це позитивне число");
+// } else {
+//     console.log("Це негативне число");
+// }
 
+// const userInput = Number(prompt('Введіть число'));
+// if (userInput % 2) {
+//     console.log("Не парне");
+// } else {
+//     console.log('Парне');
+// }
 
-// const b = 6 - '3';
-// console.log(typeof b);
 
+// console.log(userInput % 2 ? "Не парне" : 'Парне');
 
-// const value = 10;
-// const value_2 = '15';
+// if (0) { //=> false
 
-// const result = value - Number(value_2);
+// } else {
+//     console.log('в мене нуль');
+// }
+
+// if (!0) { //=> false
+//     console.log('в мене нуль');
+// }
+
+
+// Example 4 - Вкладені розгалуження
+// Напиши скрипт, який порівнює числа у змінних a та b. Якщо обидва значення більше 100, то виведи в консоль максимальне з них. В протилежному випадку у консолі повинна бути сума значення b та числа 512.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const companyName = 'Cyberdyne Systems';
-// const repairBots = 150;
-// const defenceBots = 50;
-// const message = companyName + " " + 'has' + " " + (repairBots + defenceBots) + " bots in stock ";
-// const message = `${companyName} has ${repairBots + defenceBots} bots in stock`;
-// console.log(message); // "Cyberdyne Systems has 200 bots in stock"
-
-
-
-
-// Example 6 - Методи рядків та чейнінг
-// Напиши скрипт, який розраховує індекс маси тіла людини. Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини у метрах.
-
-// Вага та висота зберігаються у змінних weight та height, але не як числа, а в вигляді рядків (спеціально для завдання). Не цілі числа можуть бути задані у вигляді 24.7 або 24,7, тобто як роздільник дробової частини може бути кома.
-
-// Індекс маси тіла необхідно округлити до однієї цифри після коми;
-
-// let weight = '88,3';
-// let height = '1.75';
-// weight = Number(weight.replace(',','.'));
-// // weight = Number(weight)
-
-// height = Number(height);
-// // height = +height;
-// // Boolean
-// // !!
-
-// // console.log(typeof height);
-
-// // const bmi = weight / Math.pow(height, 2);
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
-// const bmi = Number((weight / height ** 2).toFixed(1));
-// console.log(bmi); // 28.8
-
-
-// Example 7 - Оператори порівняння та приведення типів
-// Яким буде результат виразів?
-
-// console.log(5 > 4);  //true
-
-// console.log(10 >= '7'); // true
-// // https://unicode-table.com/en/#0031
-// // console.log('2' >= '2');  
-
-// console.log('2' < '12'); '2' < '1' 32 < 31
-
-// console.log('4' == 4); 4 == 4 // true
-
-// console.log('6' === 6); // false
-
-// console.log('false' === false); //false
-
-// true => 1
-// false => 0
-// console.log(1 == true);//true
-
-// console.log(1 === true); // false
-
-// console.log('0' == false); // true
-
-// console.log('0' === false); // false
-
-// console.log('Papaya' < 'papaya'); // true "P" < 'p' 50 < 70
-
-// console.log('Papaya' === 'papaya'); 50 === 70
-
-
-// console.log('papaya' < 'papaub'); //false
-// p 70
-// a 61
-// p 70
-// a 61
-// y  79      u 75
-
-// console.log(undefined == null); 0 0
-
-// console.log(undefined === null);
-
-
-// Example 8 - Логічні оператори
-// Яким буде результат виразів?
-// && І
-// Повертає перший false або останій true
-// console.log(true && 3); // 3
-
-// console.log(false && 3); // false
-
-// console.log(true && 4 && 'kiwi');//kiwi
-// true   true   true
-// console.log(true && 0 && 'kiwi'); // 0
-
-
-// || АБО 
-// Або повертає перше значення яке приведеться до true або останій false
-
-// console.log(true || 3); //true
-
-// console.log( 3 ||true || 4); 3
-// true
-// console.log('sdafgh' || false || 7); //'sdafgh'
-
-// console.log(null || 2 || undefined); //2
-// false   true
-// console.log((1 && null && 2) > 0);
-// // 1 && null && 2 => null
-// // 1 => true
-// // null  => false
-
-// // 2
-// // console.log((null) > 0);
-// // console.log(Number(null)); => 0
-// // 0 > 0 false
-
-// console.log(null || (2 && 3) || 4);
-
-// 1 null => false 
-// 2 || АБО ШУКАЄ ПЕРШИЙ TRUE
-// 3 2 && 3
-// 4 2 => true
-// 5 3 => true
-// 3 || 4 => 3
-
-
-
-// Example 9 - Значення за замовчуванням та оператор нульового злиття (??)
-
-
-//  || АБО він працює на 6 значень які повертають false
-// 1 undefined => false
-// 2 null      => false
-// 3 0         => false
-// 4 NaN       => false
-// 5 ''       => false
-// 6 false     => false
-
-
-// ?? він працює на 2 значення null undefined
-
-// const incomingValue = 5;
-// // const result = incomingValue + Number('a11')// 16
-// let test = 0;
-// console.log(test);
-// // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing
-// const value = test ?? 'some value';
-// console.log(value);
-// console.log(result);
-// const defaultValue = 10;
-// const value = result || defaultValue;
-// console.log(value);
+const a = 120;
+const b = 180;
+// if (a > 100 && b > 100) {
+//     if (a > b) {
+//         console.log(a);
+//     } else {
+//         console.log(b);
+//     }
+// } else {
+//     console.log(b + 512);
+// }
+// if (a > 100 && b > 100) {
+//     console.log(a > b ? a : b);
+// } else {
+//     console.log(b + 512);
+// }
+
+// Example 5 - Форматування посилання (endsWith)
+// Напиши скрипт який перевіряє чи закінчується значення змінної link символом /. Якщо ні, додай до кінця значення link цей символ. Використовуй конструкцію if...else.
+
+// let link = 'https://my-site.com/about';
+// // // Пиши код нижче за цей рядок
+// if(!link.endsWith('/')){
+//     link +='/';
+// }
+// // // Пиши код вище за цей рядок
+// console.log(link);
+
+
+
+// Example 6 - Форматування посилання (includes та логічне «І»)
+// Напиши скрипт який перевіряє чи закінчується значення змінної link символом /. Якщо ні, додай до кінця значення link цей символ, але тільки в тому випадку, якщо в link є підрядок "my-site". Використовуй конструкцію if...else.
+
+// let link = 'https://somesite.com/about';
+// // // Пиши код нижче за цей рядок
+// if(!link.endsWith('/') && link.includes("my-site")){
+//     link +='/';
+// }
+// // // Пиши код вище за цей рядок
+// console.log(link);
+
+
+
+// Example 7 - Форматування посилання (тернарний оператор)
+// Виконай рефакторинг коду задачі номер 4, використовуючи тернарний оператор.
+
+// let link = 'https://my-site.com/about';
+// // if (link.includes('my-site') && !link.endsWith('/')) {
+// //     link += '/';
+// // }
+// console.log(link.includes('my-site') && !link.endsWith('/') ? link += '/' : link);
+
+
+
+// Example 8 - if...else та логічні оператори
+// Напиши скрипт який виводитиме в консоль браузера рядок залежно від значення змінної hours.
+
+// Якщо значення змінної hours:
+
+// менше 17, виводь рядок "Pending"
+// більше або дорівнює 17 і менше або дорівнює 24, виводь рядок "Expires"
+// більше 24 , виводь рядок "Overdue"
+// const hours = 19;
+
+// if (hours < 17) {
+//     console.log("Pending");
+// } else if (hours >= 17 && hours <= 24) {
+//     console.log("Expires");
+// } else {
+//     console.log('Overdue');
+// }
+
+
+// Example 9 - Дедлайн здачі проекту (if...else)
+// Напиши скрипт для відображення часу дедлайну здачі проекту. Використовуй конструкцію if...else.
+
+// Якщо до дедлайну 0 днів - виведи рядок "Сьогодні"
+// Якщо до дедлайну 1 день - виведи рядок "Завтра"
+// Якщо до дедлайну 2 дні - виведи рядок "Післязавтра"
+// Якщо до дедлайну 3+ днів - виведи рядок "Дата у майбутньому"
+// const daysUntilDeadline = 2;
+// // // Пиши код нижче за цей рядок
+// if (!daysUntilDeadline) {
+//     console.log("Сьогодні");
+// } else if (daysUntilDeadline === 1) {
+//     console.log("Завтра");
+// } else if (daysUntilDeadline === 2) {
+//     console.log("Післязавтра");
+// } else {
+//     console.log("Дата у майбутньому");
+// }
+
+
+
+// Example 10 - Дедлайн здачі проекту (switch)
+// Виконай рефакторинг коду задачі номер 5 використовуючи switch.
+
+// const daysUntilDeadline = -1;
+
+// // if (daysUntilDeadline === 0) {
+// //   console.log('Сьогодні');
+// // } else if (daysUntilDeadline === 1) {
+// //   console.log('Завтра');
+// // } else if (daysUntilDeadline === 2) {
+// //   console.log('Післязавтра');
+// // } else {
+// //   console.log('Дата у майбутньому');
+// // }
+
+// if (daysUntilDeadline >= 0) {
+//     switch (daysUntilDeadline) {
+//         case 0:
+//             console.log('Сьогодні');
+//             break;
+//         case 1:
+//             console.log('Завтра');
+//             break;
+//         case 2:
+//             console.log('Післязавтра');
+//             break;
+//         default:
+//             console.log('Дата у майбутньому');
+//     }
+// } else {
+//     console.log("Друже ти проспав");
+// }
+
+
+
+// Example 11 - Цикл for
+// Напиши цикл for, який виводить у консоль браузера числа за зростанням від min до max, але тільки якщо число кратне 5.
+
+// const max = 100;
+// const min = 20;
+// !min => 20 => true => !true=> false
+// // 1 ''
+// // 2 0
+// // 3 null
+// // 4 undefined
+// // 5 NaN
+// // 6 false
+
+
+// const max = 100;
+// const min = 20;
+
+// for (let i = min; i >= min && i <= max; i += 1) {
+//     if (!(25 % 5)) { //25 % 5 => 0 => false => !false => true
+//         console.log(i);
+//     }
+// }
+
+
+
+
+
+
+// Example 12 - Введення користувача та розгалуження
+// Напиши скрипт, який питатиме логін за допомогою prompt та логувати результат у консоль браузера.
+
+// Якщо відвідувач вводить "Адмін", то prompt запитує пароль
+// Якщо нічого не введено або натиснуто клавішу Esc - вивести рядок "Скасовано"
+// В іншому випадку вивести рядок "Я вас не знаю"
+// Пароль перевіряти так:
+// Якщо введено пароль "Я адмін", то вивести рядок "Доброго дня!"
+// Інакше виводити рядок "Невірний пароль"
+
+// const login = prompt("Тут має бути ЛОГІН");
+// if(!login){
+//   console.log("Скасовано");  
+// }else if(login === "Адмін"){
+//     const password = prompt("Тут має бути ПАРОЛЬ")
+//     console.log(password === "Я адмін" ? "Доброго дня!" : "Невірний пароль");
+// }else{
+//     console.log("Я вас не знаю");
+// }
+// console.log(login);
+// const password = prompt()
+
+
+// function add(a, b) {
+//     const result = a + b;
+//     return result;
+// }
+
+// console.log(add(2, 4));
+
+// const str = 'М\'який'
+// console.log(str);
